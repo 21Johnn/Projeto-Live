@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #CBCBCB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 593px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+.carrosel{
+    overflow: hidden;
+    width: 310px;
+    height: 270px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.caixa-img{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.carrosel img{
+    width: 310px;
+    height: 270px;
+}
+
+h2{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.oferta{
+    color: #6D6D6D;
+    text-decoration: line-through;
+}
+
+.preco{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.colors{
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.cores{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.cor--cinza{    
+    background-color: #9C9C9C;    
+}
+
+.cor--vermelho{
+    background-color: #D33030;
+}
+
+.cor--golden{
+    background-color: #F8CE38;
+}
+
+.cor--prata{
+    background-color: #646464;
+}
+
+.cor--preto{
+    background-color: #000000;
+}
+
+button{
+    background-color: #28BB1B;
+    border-radius: 8px;
+    border: transparent;
+    color: white;
+    height: 43px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+a{
+    font-size: 16px;
+    color: #6D6D6D;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.selecionado {
+    border: 2px solid rgb(59, 209, 5);
+  }
+
+@media (max-width: 767px){
+    body{
+        display: block;
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
